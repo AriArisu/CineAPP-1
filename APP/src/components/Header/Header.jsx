@@ -1,6 +1,12 @@
+import Navbar from "../Navbar/Navbar"
+
 function Header() {
     return ( 
-    <h1>header</h1>
+    <header>
+        <span>Olá visitante</span>
+        <h1>bem vindo</h1>
+        <Navbar/>
+    </header>
     );
 }
 
