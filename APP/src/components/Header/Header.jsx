@@ -2,9 +2,8 @@ import Navbar from "../Navbar/Navbar"
 
 function Header() {
     return ( 
-    <header>
+    <header className="flex bg-primary text-white p-4 mb-5 justify-between">
         <span>Olá visitante</span>
-        <h1>bem vindo</h1>
         <Navbar/>
     </header>
     );
