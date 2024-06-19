@@ -14,7 +14,21 @@ function Filmes() {
 
     return ( 
         <>
-        <h1>Filmes</h1>
+                <div className='banner'>
+            {
+                filmes.map(
+                    filme =>(
+                        <div className="cardFilme" key={filme.id}>
+                        <img src={`https://image.tmdb.org/t/p/w92/${filme.poster_path}`} alt="" />
+                        <h1 >{filme.title}</h1>   
+                        <Link to={`${filme.id}`} className='bg-purple-800'>Saiba Mais</Link>
+                        </div>                      
+                    )
+                )
+            }
+        </div>
+
+
         <div className='ListaFilmes flex flex-row gap-3 flex-wrap'>
             {
                 filmes.map(
