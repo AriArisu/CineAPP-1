@@ -5,6 +5,7 @@ function Home() {
         <>
         <div className="grid grid-cols-3">
         {
+
             data.map(
                 (filme, index)=>(
                     <>

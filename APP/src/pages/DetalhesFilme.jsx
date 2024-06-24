@@ -17,7 +17,7 @@ function DetalhesFilme(){
         <>
         <h1>detalhes do filme</h1>
 
-        <img src={`https://image.tmdb.org/t/p/w1280/${filme.backdrop_path}`} alt="" />
+        <img src={`https://image.tmdb.org/t/p/w1280/${filme.backdrop_path}`} className='w-full' />
 
         <p>{filme.title}</p>
         <p>{filme.release_date}</p>

@@ -14,15 +14,15 @@ function Filmes() {
 
     return ( 
         <>
-                <div className='banner'>
+                <div className='banner flex flex-row overflow-x-scroll space-x-4 h-72 w-full'>
             {
                 filmes.map(
                     filme =>(
-                        <div className="cardFilme" key={filme.id}>
-                        <img src={`https://image.tmdb.org/t/p/w92/${filme.poster_path}`} alt="" />
-                        <h1 >{filme.title}</h1>   
-                        <Link to={`${filme.id}`} className='bg-purple-800'>Saiba Mais</Link>
-                        </div>                      
+                        <div className="cardFilme flex flex-col w-1/4" key={filme.id}>
+                        <img src={`https://image.tmdb.org/t/p/w92/${filme.poster_path}`} className='w-full h-auto' />
+                        <h1 className='wraptext-wrap'>{filme.title}</h1>
+                        <Link to={`${filme.id}`} className='bg-purple-800 text-center'>Saiba Mais</Link>
+                    </div>                   
                     )
                 )
             }
@@ -33,9 +33,9 @@ function Filmes() {
             {
                 filmes.map(
                     filme =>(
-                        <div className="cardFilme" key={filme.id}>
-                        <img src={`https://image.tmdb.org/t/p/w92/${filme.poster_path}`} alt="" />
-                        <h1 >{filme.title}</h1>   
+                        <div className="cardFilme flex flex-col w-1/4" key={filme.id}>
+                        <img src={`https://image.tmdb.org/t/p/w92/${filme.poster_path}`} className='w-full h-auto' />
+                        <h1 className='wraptext-wrap'>{filme.title}</h1>   
                         <Link to={`${filme.id}`} className='bg-purple-800'>Saiba Mais</Link>
                         </div>                      
                     )
