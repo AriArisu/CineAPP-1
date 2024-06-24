@@ -4,8 +4,8 @@ export default function Contato() {
   return (
     <div className="flex flex-col items-center justify-evenly">
 
-    <h2 className="text-3xl font-bold text-gray-900 ">Contato</h2>
-     <div className="flex flex-col w-1/2">   
+    <h2 className="text-3xl font-bold text-gray-900 m-11">Contato</h2>
+     <div className="flex flex-col w-3/4 bg-primary bottom-0 p-20 border-8 border-primary rounded-t-3xl">   
       <form className="flex flex-col">
             <div className="flex flex-row w-full justify-between">
             <div className="PrimeiroNome w-2/5">
