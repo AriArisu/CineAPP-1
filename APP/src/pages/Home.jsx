@@ -6,6 +6,7 @@ function Home() {
 
     return ( 
         <>
+        
             <div className="noticiasNovas flex flex-row w-9/12 items-between">
             {maisNova.map((filme, index) => (
                     <div className="Noticiaprincipal card m-2 w-1/3" key={index}>
