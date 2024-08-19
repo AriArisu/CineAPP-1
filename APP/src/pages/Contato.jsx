@@ -31,7 +31,7 @@ function sendEmail(e){
   .catch(error => {
     console.error('Erro ao enviar email:', error);
   });
-};
+}
   return (
     <div className="flex flex-col items-center justify-evenly">
 

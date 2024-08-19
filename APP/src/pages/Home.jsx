@@ -1,12 +1,33 @@
-import data from '../../artigos.json'
 
+import { useState } from 'react';
+import data from '../../artigos.json'
 function Home() {
     const maisNova = data.slice(0,1);
-    const destaques = data.slice(1, 6);
+    const destaques = data.slice(1, 6)
+    const [nome,setNome] = useState ('')
+    const [acharArtigo, setacharArtigo] = useState('data')
+
+    function onHandleNome(e){
+        setNome (e.target)
+    }
+
+
 
     return ( 
         <>
-        
+    <input 
+    type='text'
+    name='nome'
+    id='nome'
+    value={nome}
+    onChange={onHandleNome} 
+    placeholder='PeekABoo'
+    />  
+
+    <div>
+    
+    </div>
+
             <div className="noticiasNovas flex flex-row w-9/12 items-between">
             {maisNova.map((filme, index) => (
                     <div className="Noticiaprincipal card m-2 w-1/3" key={index}>
